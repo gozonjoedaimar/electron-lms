@@ -41,6 +41,6 @@
 	</div>
 	<div class="form-group col-xl-6 col-md-6">
 		<label>Amount<label>
-		<input type="text" class="form-control" name="payment" vrequired onkeyup="this.value=this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1')" required="required"/>
+		<input type="text" class="form-control" name="payment" value="<?=round($monthly, 2)?>" vrequired onkeyup="this.value=this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1')" required="required"/>
 	</div>
 </div>

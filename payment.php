@@ -286,7 +286,12 @@
 			$('#dataTable').DataTable();
 			
 			$('.ref_no').select2({
-				placeholder: 'Select an option'
+				placeholder: 'Select active loan',
+                language: {
+                    noResults: function() {
+                        return "No active loan"
+                    }
+                }
 			});
 			
 			$('#ref_no').on('change', function(){

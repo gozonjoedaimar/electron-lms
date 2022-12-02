@@ -53,8 +53,8 @@ CREATE TABLE `loan` (
   `purpose` text NOT NULL,
   `amount` double NOT NULL,
   `lplan_id` int(30) NOT NULL,
-  `status` tinyint(1) NOT NULL COMMENT '0=request, 1=confirmed, 2=released, 3=completed, 4=denied',
-  `date_released` datetime NOT NULL,
+  `status` tinyint(1) NOT NULL DEFAULT 0 COMMENT '0=request, 1=confirmed, 2=released, 3=completed, 4=denied',
+  `date_released` datetime,
   `date_created` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
