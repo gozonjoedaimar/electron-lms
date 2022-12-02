@@ -1,0 +1,12 @@
+{
+    "name": "lakawon/lms",
+    "require": {
+        "symfony/dotenv": "^5.4"
+    },
+    "authors": [
+        {
+            "name": "gozonjoedaimar",
+            "email": "gozonjoedaimar@gmail.com"
+        }
+    ]
+}

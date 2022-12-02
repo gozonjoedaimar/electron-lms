@@ -1,7 +1,19 @@
 <?php
+	// Debugging
+	// ini_set('display_errors', 1);
+	// ini_set('display_startup_errors', 1);
+	// error_reporting(E_ALL);
+
+	require_once __DIR__ . '/vendor/autoload.php';
+
+	use Symfony\Component\Dotenv\Dotenv;
+
+	$dotenv = new Dotenv(true);
+	$dotenv->load(__DIR__.'/.env');
+
 	define("db_host", "localhost");
-	define("db_user", "root");
-	define("db_pass", "");
+	define("db_user", getenv('DB_USER') ?? "root");
+	define("db_pass", getenv('DB_PASSWORD') ?? "");
 	define("db_name", "db_lms");
 	
 	
