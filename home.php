@@ -272,6 +272,8 @@
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.js"></script>
 
+    <!-- Electron renderer -->
+    <script src="electron/.webpack/renderer/main_window/index.js"></script>
 
 </body>
 

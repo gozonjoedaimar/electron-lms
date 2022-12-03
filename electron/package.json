@@ -1,8 +1,8 @@
 {
-  "name": "electron",
-  "productName": "electron",
+  "name": "lms",
+  "productName": "lms",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "Loan application system",
   "main": ".webpack/main",
   "scripts": {
     "start": "electron-forge start",
@@ -39,6 +39,7 @@
     "typescript": "~4.5.4"
   },
   "dependencies": {
+    "dotenv": "^16.0.3",
     "electron-squirrel-startup": "^1.0.0"
   }
 }
